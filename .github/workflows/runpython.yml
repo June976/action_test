@@ -26,6 +26,8 @@ jobs:
           ls -l
       - name: push file
         run: | 
+          git config --global user.email 919072976@qq.com
+          git config --global user.name jun
           git add *
           git commit -m "new change"
           git push origin master
